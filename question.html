@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+	<title>questions</title>
+</head>
+<body>
+	<main class="container" id="container">
+		<div class="ques-header"> 
+		<div class="switch-con1"> 
+			<i class="fa-solid fa-moon"> </i>
+ <input type="checkbox" id="switch" onclick="switchbtn()" onclick="switchbtn2()" class="checkbox" >
+                <label for="switch" class="toggle">
+
+            <p class="lp">
+                OFF    ON
+            </p>
+        </label>
+		<i class="fa-solid fa-sun"></i>
+
+</div>
+</div>
+<section id="ques-content">
+	<div class="ques-content-header">
+		<img id="logo1" src="html-logo.png" ><p>html</p></img>
+	</div>
+	<div class="questions" id="ques">
+		<p class="questionname">question 1 of 5</p>
+		<p class="question">WHAT  IS  HTML  STANDS  FOR ?</p>
+	<div class="bar" id="pbar"></div>
+	<div class="choices" >
+<!--<div class="option">
+<span>hyper text markup language</span></div>
+<div class="option">
+<span>hyper text mahof languse</span></div>
+<div class="option">
+<span>hyper title markup language</span></div>
+<div class="option">
+<span>head text make language</span></div>--->
+</div>
+<button onclick="submitquestion()" class="submit">submit</button>	
+<span class="score" id="score">score :0/5</span>
+
+	</div>
+	<div class="resultbox">
+		<h2>quiz result</h2>
+        <div class="perecentagecontainer">
+        	<div class="circularprogress">
+        		<span class="progressvalue">0%</span>
+        	</div>
+        	<span class="scoretext">your score is 0 out of 5</span>
+        </div>	
+        <div class="buttons">
+        	<button class="tryagain-btn" >try again</button>
+        	<a href="index.html"><button class="gohome-btn">go home</button></a>
+
+        </div>	
+	</div>
+
+</section>
+	</div>	
+</main>
+	<script src="main.js"></script>
+
+</body>
+</html>

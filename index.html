@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+	<title>quiz</title>
+</head>
+<main>
+	<div class="container" id="container">
+		<div class="quiz-header">
+		<h1>welcome to the frontend quiz !</h1>
+		<div class="switch-con"> 
+			<i class="fa-solid fa-moon">
+
+			 <input type="checkbox" id="switch" onclick="switchbtn()" onclick="switchbtn2()" class="checkbox" >
+                <label for="switch" class="toggle">
+              </i>
+
+            <p class="lp">
+                OFF    ON
+            </p>
+        </label>
+		<i class="fa-solid fa-sun"></i>
+
+</div>
+		<p>pick a subject to get started</p>
+
+	</div>
+	<div class="track-choice">
+		<div class="html-con">
+			<a href="question.html"  ><img src="html-logo.png" id="html-logo" >
+			<p id="htmlp">html</p></a>
+		</div>
+		<div class="css-con">
+			<a href="question.html"><img src="css-logo.png" id="css-logo">
+			<p id="cssp">css</p></a>
+		</div>
+		<div class="js-con">
+			<a href="question.html"><img src="js-logo.jpg" id="js-logo">
+			<p id="jsp">java script</p></a>
+		</div>
+		<div class="access-con">
+			<a href="question.html"><img src="access-logo.png" id="access-logo">
+			<p id="accessp">accessbility</p></a>
+		</div>
+		</div>
+		</div>
+
+</main>
+<body>
+	<script>
+		let con=document.getElementById("container");
+	let sw=document.getElementById("switch");
+	
+function switchbtn() {
+con.style.background="url(back2.jpg)";
+sw.onclick=switchbtn2;
+}
+function switchbtn2(){
+con.style.background="url(back1.jpg) ";
+con.style.backgroundSize="100% ";
+sw.onclick=switchbtn;
+
+}
+
+	</script>
+</body>
+</html>
